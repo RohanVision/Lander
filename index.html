@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap" rel="stylesheet">
+	<title>Native LP v1</title>
+	<style>
+
+		*{box-sizing: border-box; margin: 0px; padding: 0px; font-family: 'Open Sans', sans-serif;}
+        .container{ position: relative; overflow: hidden;}
+        .wrapper{display: flex; padding: 40px 0 50px; max-width: 1126px; width: 100%; margin:  0 auto;}
+        .bg-color{background-color: #f7f8f9;}
+        .header-top{position: relative; overflow: hidden; background: url(./images/ribon-banner.png)no-repeat; background-size: cover;}
+        .top-logo{position: relative; overflow: hidden; width: 1107px; min-height: 28px; margin: 30px auto 50px; background: url(./images/mnet-logo-white.png) no-repeat;}
+        .header-text{position: relative; overflow: hidden; max-width: 934px; margin: 0 auto 20px; text-align: center; color: #fff; font-size: 54px; font-weight: bold;}
+        .subHeader-text{position: relative; overflow: hidden; max-width: 700px; margin: 0 auto 30px; text-align: center; color: #fff; font-size: 24px; font-weight: bold;}
+        .header-btn{position: relative; overflow: hidden; display: block; width: 230px; height: 50px; margin: 0 auto 38px; padding: 12px 50px 14px 51px; color: #e94555; background-color: #ffffff; border-radius: 38px; font-weight: bold; text-align: center; text-decoration: none; }
+        .native-header{font-size: 30px; max-width: 770px;margin: 30px auto; text-align: center;}
+        /* .native-one{display: flex; max-width: 1126px; width: 100%; margin:  0 auto;} */
+        .nativeOne{flex: 1;}
+        .nativeOne-subhead{font-size: 30px; line-height: 40px; color: #4c4c4c; font-weight: bold; margin-bottom: 20px;}
+        .nativeOne-subhead:after{content: " "; display: block; border: 1px solid #e94555; width: 150px; margin-top: 9px;}
+        .nativeOne-list li{font-size: 21px; line-height: 32px; color: #4c4c4c; font-weight: bold; list-style: none; margin-top: 30px;}
+        .nativeOne-list li:first-child{margin-top: 0px;}
+        .nativeOne-list li:before{ content: ""; display: inline-block; width: 10px; height: 10px; background: #e94555; border-radius: 50%; margin: 0 15px 3px 0;}
+        .nativeOne-listTwo{font-size: 18px; line-height: 32px; color: #4c4c4c; margin-left: 25px;}
+        .center{display: flex; max-width: 374px; width: 100%; min-height: 484px; background: url(./images/mock.png)no-repeat; background-size: cover; margin: 0 31px;}
+        
+        .nativeTwo-list{display: flex; justify-content: space-between; max-width: 1126px; width: 100%; margin: 0 auto 52px;} 
+        .native-two li{list-style-type: none; display: flex; flex-flow: column; align-items: center; justify-content: space-evenly; min-width: 320px; max-width: 320px; box-shadow: 1px 3px 15px -2px rgba(0, 0, 0, 0.2); background-color: #ffffff; min-height: 320px;}
+        .native-icon{width: 80px; height: 80px; background: url(./images/group-2.png)no-repeat;}
+        .nativeTwo-headText{font-size: 21px; line-height: 32px; text-align: center; color: #4c4c4c; font-weight: bold;}
+        .nativeTwo-subText{max-width: 251px; font-size: 18px; line-height: 32px; color: #4c4c4c; text-align: center;}
+        .native-btn{position: relative; overflow: hidden; display: block; width: 230px; height: 50px; margin: 0 auto 38px; padding: 12px 50px 14px 51px; color: #ffffff; background-color: #e94555; border-radius: 38px; font-weight: bold; text-align: center; text-decoration: none; }
+        
+        .native-number{overflow: hidden;}
+        .native-numberBox{display: flex; max-width: 1126px; width: 100%; margin: 0 auto;}
+        .native-numberLeft{width: 563px; margin-right: 91px;}
+        .native-numberList li{list-style: none; padding-bottom: 50px;}
+        .native-numberList li:first-child{padding-top: 78px;}
+        .native-numberTxtOne{font-size: 36px; line-height: 40px; color: #e94555; font-weight: bold;}
+        .native-numberTxtTwo{font-size: 24px; line-height: 40px; color: #4c4c4c;}
+        .native-numberRight{max-width: 450px; min-height: 510px; background: url(./images/mock-2.png)no-repeat; background-size: cover; min-width: 450px;}
+        
+    
+        .nativeSponcer{display: flex; justify-content: center; align-items: center; min-height: 108px;}
+        .sponcerList{display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; max-width: 1126px; width: 100%; padding: 40px 30px;}
+        .sponcerList li{list-style: none;}
+        .sponcerList li:last-child{margin-right: 0;}
+
+        .native-company{position: relative; overflow: hidden; padding-bottom: 40px;}
+        .card{display: flex; justify-content: space-evenly; align-items: center; flex-flow: column; text-align: center; position: absolute; color: #4c4c4c; top: 45%; left: 50%; transform: translate(-50%, -45%); width: 740px; height: 485px; border-radius: 5px; box-shadow: 1px 3px 15px -2px rgba(0, 0, 0, 0.2); background-color: #ffffff;}
+        .companyTop{min-height: 450px; overflow: hidden;}
+        .companyBottom{height: 250px; padding-top: 210px;}
+        .cardHeader{font-size: 21px; font-weight: bold; margin-top: 50px;}
+        .cardSub{font-size: 21px; margin: 5px 0;}
+        .cardText{ font-size: 18px; line-height: 30px;}
+
+        footer{padding-bottom: 27px;}
+        .nativeFooter{display: flex; justify-content: center; align-items: center;}
+        .footerIcon{width: 181px; height: 31px; background: url(./images/footerIcon.png)no-repeat; margin: 22px 0 17px;}
+        .footerList{display: flex; flex-wrap: wrap; justify-content: center; align-items: center; font-size: 12px; line-height: 13px; color: #474747;}
+        .footerList li{list-style-type: none; border-right: 1px solid #474747; padding: 0 8px;  margin: 4px 0;}
+        .footerList li:last-child{border:0; padding-right: 0;}
+        .footerList a{text-decoration: none; color: #474747;}
+
+
+
+
+		@media only screen and (max-width: 1150px){
+            .header-text, .subHeader-text, .native-header{padding: 0 30px;}
+            .top-logo{margin: 30px 45px 60px;}
+            .native-header{ display: block; max-width: 770px; margin: 30px auto;}
+            .native-one{padding: 0 30px; flex-direction: column; align-items: center;}
+            .left, .right{max-width: 374px;}
+            .nativeTwo-list{ flex-direction: column; align-items: center;}
+            .native-two li{margin-bottom: 49px;}
+            .native-numberBox{padding: 0 30px; flex-direction: column; justify-content: center; align-items: center;}
+            .native-numberLeft{margin: 0; max-width: 374px;}
+            .native-numberList li:first-child{padding-top: 40px;}
+        }
+        @media only screen and (max-width: 468px){
+            .center{display: none;}
+            .native-numberLeft{max-width: 320px; padding: 0px 30px; text-align: center;}
+            .native-numberRight{display: none;}
+            .sponcerList{justify-content: space-around;}
+
+
+            .card{ max-width: 280px; min-height: 570px}
+        }
+
+   
+   </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <section class="header-top">
+            <div class="top-logo">&nbsp;</div>
+            <p class="header-text">Direct $41.1 Billion in Advertising Budgets to Your Content</p>
+            <p class="subHeader-text">An effective native advertising platform like Media.net will offer you a revenue increase of up to 1.5x</p>
+            <a href="#" class="header-btn">Sign up now</a>
+        </section>
+
+        <section class="native">
+            <h3 class="native-header">Why should you tap into native?</h3>
+
+            <div class="native-one wrapper">
+                <div class="nativeOne left">
+                    <p class="nativeOne-subhead">For Publishers</p>
+                    <ul class="nativeOne-list">
+                        <li>Feels like part of the content</li>
+                    </ul>
+                    <p class="nativeOne-listTwo">Blends in with your content </p>
+                    <p class="nativeOne-listTwo"> but stands out by being hyper-relevant.</p>
+
+                    <ul class="nativeOne-list">
+                        <li>Improves engagement</li>
+                    </ul>
+                    <p class="nativeOne-listTwo">Native ads have 2X more </p>
+                    <p class="nativeOne-listTwo">visual focus vs display ads</p>
+                    
+                    <ul class="nativeOne-list">
+                        <li>Taps into new ad budgets</li>
+                    </ul>
+                    <p class="nativeOne-listTwo">Gives you access to traditionally</p>
+                    <p class="nativeOne-listTwo">unavailable, new spends for your site</p>                    
+                </div>
+                <div class="nativeOne center">&nbsp;</div>
+
+                <div class="nativeOne right">
+                    <p class="nativeOne-subhead">For Users</p>
+                    <ul class="nativeOne-list">
+                        <li>Offers a non-intrusive UX</li>
+                    </ul>
+                    <p class="nativeOne-listTwo">Ads blend in with content, so user</p>
+                    <p class="nativeOne-listTwo">experience remains intact</p>
+
+                    <ul class="nativeOne-list">
+                        <li>Builds trust with audience</li>
+                    </ul>
+                    <p class="nativeOne-listTwo">Adhere to editorial guidelines with ads</p>
+                    <p class="nativeOne-listTwo">that blend in and deliver real value</p>
+                    
+                    <ul class="nativeOne-list">
+                        <li>Increases purchase intent</li>
+                    </ul>
+                    <p class="nativeOne-listTwo">Empower customers with </p>
+                    <p class="nativeOne-listTwo">useable information via subtle and convincing branded content</p>  
+                </div>
+            </div>
+
+             <h3 class="native-header">How Media.net’s Native+ platform can change<br> the way you monetize your content</h3>
+             
+             <div class="native-two">
+                <ul class="nativeTwo-list">
+                    <li>
+                        <p class="native-icon">&nbsp;</p>
+                        <p class="nativeTwo-headText">100% Fill Rates, Always</p>
+                        <p class="nativeTwo-subText">Native+ maximizes your revenue with 100% fill rate across diverse content verticals</p>
+                    </li>
+                    <li>
+                        <p class="native-icon">&nbsp;</p>
+                        <p class="nativeTwo-headText">Unbeatable Demand</p>
+                        <p class="nativeTwo-subText">Tap into direct advertiser & agency budgets, & leverage $6Bn in search demand from the Yahoo! Bing marketplace</p>
+                    </li>
+                    <li>
+                        <p class="native-icon">&nbsp;</p>
+                        <p class="nativeTwo-headText">Custom Inputs</p>
+                        <p class="nativeTwo-subText">Plug in your direct advertiser partnerships to compete  with demand from Media.net & other native exchanges`</p>
+                    </li>                                                            
+                </ul>
+
+                <ul class="nativeTwo-list">
+                    <li>
+                        <p class="native-icon">&nbsp;</p>
+                        <p class="nativeTwo-headText">Precise Targeting</p>
+                        <p class="nativeTwo-subText">Contextual targeting improves monetization in cookie-deficient environments</p>
+                    </li>
+                    <li>
+                        <p class="native-icon">&nbsp;</p>
+                        <p class="nativeTwo-headText">Intelligent Recirculation</p>
+                        <p class="nativeTwo-subText">Drive users to contextually relevant articles on your site for bids below specified floors</p>
+                    </li>
+                    <li>
+                        <p class="native-icon">&nbsp;</p>
+                        <p class="nativeTwo-headText">Experienced Ad Ops</p>
+                        <p class="nativeTwo-subText">Our team of experienced Ad Ops managers help you optimize your native campaigns for the highest returns</p>
+                    </li>                                                            
+                </ul>
+             </div>
+             
+             <a href="#" class="native-btn">Sign up now</a>
+            </section>
+
+
+            <section class="native-number bg-color">
+                <h3 class="native-header numberHead">Native Advertising by the Numbers</h3>
+
+                <div class="native-numberBox">
+                    <div class="native-numberLeft">
+                        <ul class="native-numberList">
+                            <li>
+                                <p class="native-numberTxtOne">300x</p>
+                                <p class="native-numbertxtTwo">More time spent on Native Ads vs Display Banners</p>
+                            </li>
+
+                            <li>
+                                <p class="native-numberTxtOne">+54%</p>
+                                <p class="native-numbertxtTwo">Increase in US Native Ad spends in the year 2018</p>
+                            </li>
+                            
+                            <li>
+                                <p class="native-numberTxtOne">+$400B</p>
+                                <p class="native-numbertxtTwo">Projected size of Native Advertising market by 2025</p>
+                            </li>                            
+                        </ul>
+                    </div>
+
+                    <div class="native-numberRight">&nbsp;</div>
+                </div>
+            </section>
+
+            <section class="nativeSponcer">
+                <ul class="sponcerList">
+                    <li><img src="./images/forbes.png" alt="" ></li>
+                    <li><img src="./images/web.png" alt="" ></li>
+                    <li><img src="./images/msn.png" alt="" ></li>
+                    <li><img src="./images/reu.png" alt="" ></li>
+                    <li><img src="./images/usa.png" alt="" ></li>
+                    <li><img src="./images/cnn.png" alt="" ></li>
+                    <li><img src="./images/ele.png" alt="" ></li>
+                </ul>
+            </section>
+
+
+            <section class="native-company">
+
+                <div class="companyTop  bg-color">
+                    <h3 class="native-header numberHead">Keep Good Company</h3>
+                </div>
+
+                <div class="card">
+                    <p class="cardHeader">David Bynon</p>
+                    <p class="cardSub">Medicarewire.com</p>
+                    <p class="cardIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                            <g fill="none" fill-rule="nonzero">
+                                <circle cx="35" cy="35" r="35" fill="#E94555"/>
+                                <g fill="#FFF">
+                                    <path d="M29.75 34.091H24.79c-.59 0-1.092-.205-1.505-.616a2.034 2.034 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.443-1.651 4.007-1.651h1.417c.383 0 .715-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 29.75 20h-1.417c-1.535 0-2.999.298-4.394.892-1.394.594-2.6 1.398-3.619 2.41a11.348 11.348 0 0 0-2.423 3.6 10.93 10.93 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.18 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.24-2.994-.826-.822-1.83-1.233-3.01-1.233zM52.761 35.324c-.826-.822-1.83-1.233-3.01-1.233h-4.959c-.59 0-1.092-.205-1.505-.616a2.032 2.032 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.442-1.651 4.007-1.651h1.417c.384 0 .716-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 49.75 20h-1.417c-1.535 0-3 .298-4.394.892-1.395.594-2.6 1.398-3.62 2.41a11.343 11.343 0 0 0-2.423 3.6 10.932 10.932 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.181 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.239-2.994z"/>
+                                </g>
+                            </g>
+                        </svg>
+                    </p>
+                    <p class="cardText">From the very first day I published MedicareWire.com in 2012, Media.net was there, by my side, as a trusted partner. In all but one year since I launched MedicareWire.com my Media.net revenue has doubled. I can honestly say, if I had not discovered Media.net and been willing to give them a try, I would not be where I am today. Media.net is my goldmine.</p>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>    
+
+                <div class="companyBottom"><a href="#" class="native-btn">Sign up now</a></div>
+            </section>
+
+
+            <footer class="bg-color">
+                <div class="nativeFooter">
+                    <span class="footerIcon">&nbsp;</span>
+                </div>
+
+                <ul class="footerList">
+                    <li><a href="#">Media.net © 2019 Contact Us</a></li>
+                    <li><a href="#">Publisher Guidelines</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </footer>
+    </div>
+</body>
+</html>

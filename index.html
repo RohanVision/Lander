@@ -78,14 +78,27 @@
             .native-numberLeft{margin: 0; max-width: 374px;}
             .native-numberList li:first-child{padding-top: 40px;}
         }
-        @media only screen and (max-width: 468px){
+        
+        @media only screen and (max-width: 768px){
             .center{display: none;}
             .native-numberLeft{max-width: 320px; padding: 0px 30px; text-align: center;}
             .native-numberRight{display: none;}
-            .sponcerList{justify-content: space-around;}
+            .nativeTwo-listP{margin-bottom: 0;}
+            .native-two li{display: none; margin-bottom: 0;}
+            .d-none{display: none;}
+            .native-two li:first-child{display: flex; max-width: 290px;  min-width: 290px}
+            .sponcerList li{padding: 10px 20px;}
+            .card{ max-width: 650px; min-height: 570px}
+            .cardText{padding: 0 10px;}
+        }
 
-
-            .card{ max-width: 280px; min-height: 570px}
+        @media only screen and (max-width: 480px){
+            .native-company{padding: 0;}
+            .numberHead{margin: 20px auto; padding: 0;}
+            .sponcerList{justify-content: space-evenly; padding: 40px 0; max-width: 320px;}
+            .sponcerList li{padding: 20px 0;}
+            .card{top: 48%;  max-width: 290px; min-height: 570px}
+            .companyBottom{padding-top: 300px; height: 380px;}
         }
 
    
@@ -171,7 +184,7 @@
                     </li>                                                            
                 </ul>
 
-                <ul class="nativeTwo-list">
+                <ul class="nativeTwo-list d-none">
                     <li>
                         <p class="native-icon">&nbsp;</p>
                         <p class="nativeTwo-headText">Precise Targeting</p>

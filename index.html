@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-    
+
     <title>Native LP v1</title>
 	<style>
 
@@ -14,7 +15,7 @@
         .bg-color{background-color: #f7f8f9;}
         .header-top{position: relative; overflow: hidden; background: url(./images/ribon-banner.png)no-repeat; background-size: cover;}
         .top-logo{position: relative; overflow: hidden; width: 1107px; min-height: 28px; margin: 30px auto 50px; background: url(./images/mnet-logo-white.png) no-repeat;}
-        .header-text{position: relative; overflow: hidden; max-width: 934px; margin: 0 auto 20px; text-align: center; color: #fff; font-size: 54px; font-weight: bold;}
+        .header-text{max-width: 934px; margin: 0 auto 20px; text-align: center; color: #fff; font-size: 54px; font-weight: bold;}
         .subHeader-text{position: relative; overflow: hidden; max-width: 700px; margin: 0 auto 30px; text-align: center; color: #fff; font-size: 24px; font-weight: bold;}
         .header-btn{position: relative; overflow: hidden; display: block; width: 230px; height: 50px; margin: 0 auto 38px; padding: 12px 50px 14px 51px; color: #e94555; background-color: #ffffff; border-radius: 38px; font-weight: bold; text-align: center; text-decoration: none; }
         .native-header{font-size: 30px; max-width: 770px;margin: 30px auto; text-align: center;}
@@ -41,8 +42,8 @@
         .native-numberList li:first-child{padding-top: 78px;}
         .native-numberTxtOne{font-size: 36px; line-height: 40px; color: #e94555; font-weight: bold;}
         .native-numberTxtTwo{font-size: 24px; line-height: 40px; color: #4c4c4c;}
-        .native-numberRight{max-width: 450px; min-height: 510px; background: url(./images/mock-2.png)no-repeat; background-size: cover; min-width: 450px;}
-        
+        .native-numberRight{opacity: 0; transition: 1s; max-width: 450px; min-height: 510px; background: url(./images/mock-2.png)no-repeat; background-size: cover; min-width: 450px;}
+        .show{opacity: 1;}
         .nativeSponcer{display: flex; justify-content: center; align-items: center; min-height: 108px;}
         .sponcerList{display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; max-width: 1126px; width: 100%; padding: 40px 30px;}
         .sponcerList li{list-style: none;}
@@ -72,11 +73,15 @@
                 justify-content: space-evenly;
                 align-items: center;
         }
+        
         .slick-dots li button{display: none;}
-        .slick-dots li,slick-active{
+        .slick-dots li{
             width: 10px;
             height: 10px;
             border-radius: 50%;
+            background: #fbdadd;
+        }
+        .slick-dots li.slick-active{
             background: #e94555;
         }
          /* Slik-Slider Css End*/
@@ -108,7 +113,8 @@
             .cardText{padding: 0 10px;}
         }
 
-        @media only screen and (max-width: 480px){
+        @media only screen and (max-width: 690px){
+            .header-text{font-size: 44px;}
             .native-company{padding: 0;}
             .numberHead{margin: 20px auto; padding: 0;}
             .sponcerList{justify-content: space-evenly; padding: 40px 0; max-width: 320px;}
@@ -441,8 +447,21 @@
 
 <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="./js/slick.js"></script>
+<script type="text/javascript" src="./js/ScrollMagic.min.js"></script>
 
     <script>
+        // ScrollMagic Effect Starts
+
+        var controller = new ScrollMagic.Controller();
+
+        var scane = new ScrollMagic.Scene({
+            triggerElement: '.native-numberRight'
+        })
+        .setClassToggle('.native-numberRight', 'show')
+        .addTo(controller);
+
+
+        //Slider
         $(document).ready(function(){
              $('.slider-main').slick({
                 arrows : false,
@@ -450,6 +469,8 @@
                 dots : true
             });
         });
+
     </script>
+
 </body>
 </html>

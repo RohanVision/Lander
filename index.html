@@ -18,7 +18,7 @@
         .subHeader-text{position: relative; overflow: hidden; max-width: 700px; margin: 0 auto 30px; text-align: center; color: #fff; font-size: 24px; font-weight: bold;}
         .header-btn{position: relative; overflow: hidden; display: block; width: 230px; height: 50px; margin: 0 auto 38px; padding: 12px 50px 14px 51px; color: #e94555; background-color: #ffffff; border-radius: 38px; font-weight: bold; text-align: center; text-decoration: none; }
         .native-header{font-size: 30px; max-width: 770px;margin: 30px auto; text-align: center;}
-        /* .native-one{display: flex; max-width: 1126px; width: 100%; margin:  0 auto;} */
+
         .nativeOne{flex: 1;}
         .nativeOne-subhead{font-size: 30px; line-height: 40px; color: #4c4c4c; font-weight: bold; margin-bottom: 20px;}
         .nativeOne-subhead:after{content: " "; display: block; border: 1px solid #e94555; width: 150px; margin-top: 9px;}
@@ -43,7 +43,6 @@
         .native-numberTxtTwo{font-size: 24px; line-height: 40px; color: #4c4c4c;}
         .native-numberRight{max-width: 450px; min-height: 510px; background: url(./images/mock-2.png)no-repeat; background-size: cover; min-width: 450px;}
         
-    
         .nativeSponcer{display: flex; justify-content: center; align-items: center; min-height: 108px;}
         .sponcerList{display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; max-width: 1126px; width: 100%; padding: 40px 30px;}
         .sponcerList li{list-style: none;}
@@ -58,7 +57,7 @@
         .cardSub{font-size: 21px; margin: 5px 0;}
         .cardText{ font-size: 18px; line-height: 30px; max-width: 550px; padding-bottom: 24px;}
 
-        footer{padding-bottom: 27px;}
+         footer{padding-bottom: 27px;}
         .nativeFooter{display: flex; justify-content: center; align-items: center;}
         .footerIcon{width: 181px; height: 31px; background: url(./images/footerIcon.png)no-repeat; margin: 22px 0 17px;}
         .footerList{display: flex; flex-wrap: wrap; justify-content: center; align-items: center; font-size: 12px; line-height: 13px; color: #474747;}
@@ -67,22 +66,22 @@
         .footerList a{text-decoration: none; color: #474747;}
 
 
-
+        /* Slik-Slider Css Start*/
         .slick-initialized .slick-slide{
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
         }
-        
+        .slick-dots li button{display: none;}
         .slick-dots li,slick-active{
             width: 10px;
             height: 10px;
             border-radius: 50%;
             background: #e94555;
         }
+         /* Slik-Slider Css End*/
         
-
-
+         /* Media Queries starts */
 		@media only screen and (max-width: 1150px){
             .header-text, .subHeader-text, .native-header{padding: 0 30px;}
             .top-logo{margin: 30px 45px 60px;}
@@ -125,7 +124,7 @@
 
 <body>
     <div class="container">
-
+        <!-- Header Section -->
         <section class="header-top">
             <div class="top-logo">&nbsp;</div>
             <p class="header-text">Direct $41.1 Billion in Advertising Budgets to Your Content</p>
@@ -133,6 +132,8 @@
             <a href="#" class="header-btn">Sign up now</a>
         </section>
 
+
+        <!-- Publisher Section -->        
         <section class="native">
             <h3 class="native-header">Why should you tap into native?</h3>
 
@@ -320,126 +321,126 @@
              <a href="#" class="native-btn">Sign up now</a>
             </section>
 
+        <!-- Advertisement Section -->
+        <section class="native-number bg-color">
+            <h3 class="native-header numberHead">Native Advertising by the Numbers</h3>
 
-            <section class="native-number bg-color">
-                <h3 class="native-header numberHead">Native Advertising by the Numbers</h3>
+            <div class="native-numberBox">
+                <div class="native-numberLeft">
+                    <ul class="native-numberList">
+                        <li>
+                            <p class="native-numberTxtOne">300x</p>
+                            <p class="native-numbertxtTwo">More time spent on Native Ads vs Display Banners</p>
+                        </li>
 
-                <div class="native-numberBox">
-                    <div class="native-numberLeft">
-                        <ul class="native-numberList">
-                            <li>
-                                <p class="native-numberTxtOne">300x</p>
-                                <p class="native-numbertxtTwo">More time spent on Native Ads vs Display Banners</p>
-                            </li>
+                        <li>
+                            <p class="native-numberTxtOne">+54%</p>
+                            <p class="native-numbertxtTwo">Increase in US Native Ad spends in the year 2018</p>
+                        </li>
+                        
+                        <li>
+                            <p class="native-numberTxtOne">+$400B</p>
+                            <p class="native-numbertxtTwo">Projected size of Native Advertising market by 2025</p>
+                        </li>                            
+                    </ul>
+                </div>
 
-                            <li>
-                                <p class="native-numberTxtOne">+54%</p>
-                                <p class="native-numbertxtTwo">Increase in US Native Ad spends in the year 2018</p>
-                            </li>
-                            
-                            <li>
-                                <p class="native-numberTxtOne">+$400B</p>
-                                <p class="native-numbertxtTwo">Projected size of Native Advertising market by 2025</p>
-                            </li>                            
-                        </ul>
+                <div class="native-numberRight">&nbsp;</div>
+            </div>
+        </section>
+
+        <!-- Sponcer Section -->        
+        <section class="nativeSponcer">
+            <ul class="sponcerList">
+                <li><img src="./images/forbes.png" alt="" ></li>
+                <li><img src="./images/web.png" alt="" ></li>
+                <li><img src="./images/msn.png" alt="" ></li>
+                <li><img src="./images/reu.png" alt="" ></li>
+                <li><img src="./images/usa.png" alt="" ></li>
+                <li><img src="./images/cnn.png" alt="" ></li>
+                <li><img src="./images/ele.png" alt="" ></li>
+            </ul>
+        </section>
+
+        <!-- Card Section -->
+        <section class="native-company">
+
+            <div class="companyTop  bg-color">
+                <h3 class="native-header numberHead">Keep Good Company</h3>
+            </div>
+
+            <div class="card">
+                <div class="slider-main">
+                    <div class="sliderWrapper">
+                        <p class="cardHeader">David Bynon</p>
+                        <p class="cardSub">Medicarewire.com</p>
+                        <p class="cardIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                                <g fill="none" fill-rule="nonzero">
+                                    <circle cx="35" cy="35" r="35" fill="#E94555"/>
+                                    <g fill="#FFF">
+                                        <path d="M29.75 34.091H24.79c-.59 0-1.092-.205-1.505-.616a2.034 2.034 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.443-1.651 4.007-1.651h1.417c.383 0 .715-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 29.75 20h-1.417c-1.535 0-2.999.298-4.394.892-1.394.594-2.6 1.398-3.619 2.41a11.348 11.348 0 0 0-2.423 3.6 10.93 10.93 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.18 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.24-2.994-.826-.822-1.83-1.233-3.01-1.233zM52.761 35.324c-.826-.822-1.83-1.233-3.01-1.233h-4.959c-.59 0-1.092-.205-1.505-.616a2.032 2.032 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.442-1.651 4.007-1.651h1.417c.384 0 .716-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 49.75 20h-1.417c-1.535 0-3 .298-4.394.892-1.395.594-2.6 1.398-3.62 2.41a11.343 11.343 0 0 0-2.423 3.6 10.932 10.932 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.181 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.239-2.994z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </p>
+                        <p class="cardText">From the very first day I published MedicareWire.com in 2012, Media.net was there, by my side, as a trusted partner. In all but one year since I launched MedicareWire.com my Media.net revenue has doubled. I can honestly say, if I had not discovered Media.net and been willing to give them a try, I would not be where I am today. Media.net is my goldmine.</p>
                     </div>
 
-                    <div class="native-numberRight">&nbsp;</div>
-                </div>
-            </section>
-
-            <section class="nativeSponcer">
-                <ul class="sponcerList">
-                    <li><img src="./images/forbes.png" alt="" ></li>
-                    <li><img src="./images/web.png" alt="" ></li>
-                    <li><img src="./images/msn.png" alt="" ></li>
-                    <li><img src="./images/reu.png" alt="" ></li>
-                    <li><img src="./images/usa.png" alt="" ></li>
-                    <li><img src="./images/cnn.png" alt="" ></li>
-                    <li><img src="./images/ele.png" alt="" ></li>
-                </ul>
-            </section>
-
-
-            <section class="native-company">
-
-                <div class="companyTop  bg-color">
-                    <h3 class="native-header numberHead">Keep Good Company</h3>
-                </div>
-
-                <div class="card">
-                    <div class="slider-main">
                         <div class="sliderWrapper">
-                            <p class="cardHeader">David Bynon</p>
-                            <p class="cardSub">Medicarewire.com</p>
-                            <p class="cardIcon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
-                                    <g fill="none" fill-rule="nonzero">
-                                        <circle cx="35" cy="35" r="35" fill="#E94555"/>
-                                        <g fill="#FFF">
-                                            <path d="M29.75 34.091H24.79c-.59 0-1.092-.205-1.505-.616a2.034 2.034 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.443-1.651 4.007-1.651h1.417c.383 0 .715-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 29.75 20h-1.417c-1.535 0-2.999.298-4.394.892-1.394.594-2.6 1.398-3.619 2.41a11.348 11.348 0 0 0-2.423 3.6 10.93 10.93 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.18 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.24-2.994-.826-.822-1.83-1.233-3.01-1.233zM52.761 35.324c-.826-.822-1.83-1.233-3.01-1.233h-4.959c-.59 0-1.092-.205-1.505-.616a2.032 2.032 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.442-1.651 4.007-1.651h1.417c.384 0 .716-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 49.75 20h-1.417c-1.535 0-3 .298-4.394.892-1.395.594-2.6 1.398-3.62 2.41a11.343 11.343 0 0 0-2.423 3.6 10.932 10.932 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.181 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.239-2.994z"/>
-                                        </g>
+                        <p class="cardHeader">David Bynon</p>
+                        <p class="cardSub">Medicarewire.com</p>
+                        <p class="cardIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                                <g fill="none" fill-rule="nonzero">
+                                    <circle cx="35" cy="35" r="35" fill="#E94555"/>
+                                    <g fill="#FFF">
+                                        <path d="M29.75 34.091H24.79c-.59 0-1.092-.205-1.505-.616a2.034 2.034 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.443-1.651 4.007-1.651h1.417c.383 0 .715-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 29.75 20h-1.417c-1.535 0-2.999.298-4.394.892-1.394.594-2.6 1.398-3.619 2.41a11.348 11.348 0 0 0-2.423 3.6 10.93 10.93 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.18 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.24-2.994-.826-.822-1.83-1.233-3.01-1.233zM52.761 35.324c-.826-.822-1.83-1.233-3.01-1.233h-4.959c-.59 0-1.092-.205-1.505-.616a2.032 2.032 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.442-1.651 4.007-1.651h1.417c.384 0 .716-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 49.75 20h-1.417c-1.535 0-3 .298-4.394.892-1.395.594-2.6 1.398-3.62 2.41a11.343 11.343 0 0 0-2.423 3.6 10.932 10.932 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.181 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.239-2.994z"/>
                                     </g>
-                                </svg>
-                            </p>
-                            <p class="cardText">From the very first day I published MedicareWire.com in 2012, Media.net was there, by my side, as a trusted partner. In all but one year since I launched MedicareWire.com my Media.net revenue has doubled. I can honestly say, if I had not discovered Media.net and been willing to give them a try, I would not be where I am today. Media.net is my goldmine.</p>
-                        </div>
-
-                         <div class="sliderWrapper">
-                            <p class="cardHeader">David Bynon</p>
-                            <p class="cardSub">Medicarewire.com</p>
-                            <p class="cardIcon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
-                                    <g fill="none" fill-rule="nonzero">
-                                        <circle cx="35" cy="35" r="35" fill="#E94555"/>
-                                        <g fill="#FFF">
-                                            <path d="M29.75 34.091H24.79c-.59 0-1.092-.205-1.505-.616a2.034 2.034 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.443-1.651 4.007-1.651h1.417c.383 0 .715-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 29.75 20h-1.417c-1.535 0-2.999.298-4.394.892-1.394.594-2.6 1.398-3.619 2.41a11.348 11.348 0 0 0-2.423 3.6 10.93 10.93 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.18 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.24-2.994-.826-.822-1.83-1.233-3.01-1.233zM52.761 35.324c-.826-.822-1.83-1.233-3.01-1.233h-4.959c-.59 0-1.092-.205-1.505-.616a2.032 2.032 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.442-1.651 4.007-1.651h1.417c.384 0 .716-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 49.75 20h-1.417c-1.535 0-3 .298-4.394.892-1.395.594-2.6 1.398-3.62 2.41a11.343 11.343 0 0 0-2.423 3.6 10.932 10.932 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.181 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.239-2.994z"/>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </p>
-                            <p class="cardText">From the very first day I published MedicareWire.com in 2012, Media.net was there, by my side, as a trusted partner. In all but one year since I launched MedicareWire.com my Media.net revenue has doubled. I can honestly say, if I had not discovered Media.net and been willing to give them a try, I would not be where I am today. Media.net is my goldmine.</p>
-                        </div>
-                         <div class="sliderWrapper">
-                            <p class="cardHeader">David Bynon</p>
-                            <p class="cardSub">Medicarewire.com</p>
-                            <p class="cardIcon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
-                                    <g fill="none" fill-rule="nonzero">
-                                        <circle cx="35" cy="35" r="35" fill="#E94555"/>
-                                        <g fill="#FFF">
-                                            <path d="M29.75 34.091H24.79c-.59 0-1.092-.205-1.505-.616a2.034 2.034 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.443-1.651 4.007-1.651h1.417c.383 0 .715-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 29.75 20h-1.417c-1.535 0-2.999.298-4.394.892-1.394.594-2.6 1.398-3.619 2.41a11.348 11.348 0 0 0-2.423 3.6 10.93 10.93 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.18 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.24-2.994-.826-.822-1.83-1.233-3.01-1.233zM52.761 35.324c-.826-.822-1.83-1.233-3.01-1.233h-4.959c-.59 0-1.092-.205-1.505-.616a2.032 2.032 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.442-1.651 4.007-1.651h1.417c.384 0 .716-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 49.75 20h-1.417c-1.535 0-3 .298-4.394.892-1.395.594-2.6 1.398-3.62 2.41a11.343 11.343 0 0 0-2.423 3.6 10.932 10.932 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.181 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.239-2.994z"/>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </p>
-                            <p class="cardText">From the very first day I published MedicareWire.com in 2012, Media.net was there, by my side, as a trusted partner. In all but one year since I launched MedicareWire.com my Media.net revenue has doubled. I can honestly say, if I had not discovered Media.net and been willing to give them a try, I would not be where I am today. Media.net is my goldmine.</p>
-                        </div>
+                                </g>
+                            </svg>
+                        </p>
+                        <p class="cardText">From the very first day I published MedicareWire.com in 2012, Media.net was there, by my side, as a trusted partner. In all but one year since I launched MedicareWire.com my Media.net revenue has doubled. I can honestly say, if I had not discovered Media.net and been willing to give them a try, I would not be where I am today. Media.net is my goldmine.</p>
                     </div>
-                </div>    
-
-                <div class="companyBottom"><a href="#" class="native-btn">Sign up now</a></div>
-            </section>
-
-            <footer class="bg-color">
-                <div class="nativeFooter">
-                    <span class="footerIcon">&nbsp;</span>
+                        <div class="sliderWrapper">
+                        <p class="cardHeader">David Bynon</p>
+                        <p class="cardSub">Medicarewire.com</p>
+                        <p class="cardIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                                <g fill="none" fill-rule="nonzero">
+                                    <circle cx="35" cy="35" r="35" fill="#E94555"/>
+                                    <g fill="#FFF">
+                                        <path d="M29.75 34.091H24.79c-.59 0-1.092-.205-1.505-.616a2.034 2.034 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.443-1.651 4.007-1.651h1.417c.383 0 .715-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 29.75 20h-1.417c-1.535 0-2.999.298-4.394.892-1.394.594-2.6 1.398-3.619 2.41a11.348 11.348 0 0 0-2.423 3.6 10.93 10.93 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.18 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.24-2.994-.826-.822-1.83-1.233-3.01-1.233zM52.761 35.324c-.826-.822-1.83-1.233-3.01-1.233h-4.959c-.59 0-1.092-.205-1.505-.616a2.032 2.032 0 0 1-.62-1.498v-.704c0-1.556.554-2.884 1.66-3.985 1.107-1.1 2.442-1.651 4.007-1.651h1.417c.384 0 .716-.14.996-.419.28-.279.42-.609.42-.99v-2.819c0-.381-.14-.712-.42-.99A1.366 1.366 0 0 0 49.75 20h-1.417c-1.535 0-3 .298-4.394.892-1.395.594-2.6 1.398-3.62 2.41a11.343 11.343 0 0 0-2.423 3.6 10.932 10.932 0 0 0-.897 4.37v15.5c0 1.175.413 2.173 1.24 2.995.826.822 1.83 1.233 3.01 1.233h8.5c1.181 0 2.184-.41 3.01-1.233.827-.822 1.24-1.82 1.24-2.994v-8.455c0-1.174-.413-2.172-1.239-2.994z"/>
+                                    </g>
+                                </g>
+                            </svg>
+                        </p>
+                        <p class="cardText">From the very first day I published MedicareWire.com in 2012, Media.net was there, by my side, as a trusted partner. In all but one year since I launched MedicareWire.com my Media.net revenue has doubled. I can honestly say, if I had not discovered Media.net and been willing to give them a try, I would not be where I am today. Media.net is my goldmine.</p>
+                    </div>
                 </div>
+            </div>    
 
-                <ul class="footerList">
-                    <li><a href="#">Media.net © 2019 Contact Us</a></li>
-                    <li><a href="#">Publisher Guidelines</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </footer>
+            <div class="companyBottom"><a href="#" class="native-btn">Sign up now</a></div>
+        </section>
+
+        <!-- Footer area-->
+        <footer class="bg-color">
+            <div class="nativeFooter">
+                <span class="footerIcon">&nbsp;</span>
+            </div>
+
+            <ul class="footerList">
+                <li><a href="#">Media.net © 2019 Contact Us</a></li>
+                <li><a href="#">Publisher Guidelines</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </footer>
     </div>
 
 
 <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="./js/slick.js"></script>
-
-
 
     <script>
         $(document).ready(function(){
